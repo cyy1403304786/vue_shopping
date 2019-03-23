@@ -14,8 +14,8 @@ import Moment from 'moment'
 Vue.filter('dataFormat',function(dataStr,pattern = "YYYY-MM-DD HH:mm:ss"){
   return Moment(dataStr).format(pattern)
 })
-Vue.component(Swipe.name, Swipe);
-Vue.component(SwipeItem.name, SwipeItem);
+Vue.component(Swipe.name, Swipe)
+Vue.component(SwipeItem.name, SwipeItem)
 import 'mint-ui/lib/style.css'
 import '@/lib/mui/css/mui.css'
 import '@/lib/mui/css/icons-extra.css'
